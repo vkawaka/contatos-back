@@ -42,7 +42,9 @@ Dentro da pasta deste repositório, você encontrará o arquivo de **dump** do b
 ## 🚀 Como rodar o servidor
 
 Certifique-se de que o **MySQL** está rodando e o banco foi configurado corretamente. ✅
+
 Certifique-se também, que o repositório se encontra dentro de **htdocs**. ✅
+
 Agora, no seu navegador, digite: **localhost/contatos-back/public/contatos**, para acessar o método GET do projeto.
 
 O backend estará rodando localmente na porta padrão! 🎉
