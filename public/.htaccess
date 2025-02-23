@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /alphacode-api/public/
+
+# Reescreve todas as URLs para index.php, exceto se o arquivo ou diretório existir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Permitindo PUT e DELETE
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} ^(PUT|DELETE)$
+    RewriteRule .* - [E=HTTP_METHOD:%{REQUEST_METHOD}]
+</IfModule>
+
+# Permitindo métodos HTTP PUT e DELETE via .htaccess
+<LimitExcept GET POST PUT DELETE>
+    Require all granted
+</LimitExcept>
