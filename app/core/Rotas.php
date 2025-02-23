@@ -18,7 +18,7 @@ class Rotas {
         $uri = $_SERVER['REQUEST_URI'];
         $method = $_SERVER['REQUEST_METHOD'];
     
-        $uri = str_replace("/alphacode-api/public", "", $uri);
+        $uri = str_replace("/contatos-back/public", "", $uri);
     
         foreach ($this->rotas as $rota) {
             $pattern = preg_replace('/\/:id/', '/(\d+)', $rota['rota']); 

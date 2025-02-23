@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /alphacode-api/public/
+RewriteBase /contatos-back/public/
 
 # Reescreve todas as URLs para index.php, exceto se o arquivo ou diretório existir
 RewriteCond %{REQUEST_FILENAME} !-f
