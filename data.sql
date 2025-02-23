@@ -1,3 +1,7 @@
+/**
+Esse arquivo contêm o script do banco de dados necessário para o funcionamento do projeto. Data de início: 19/02.
+*/
+
 CREATE SCHEMA alphacodecontatos;
 USE alphacodecontatos;
 

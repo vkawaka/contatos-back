@@ -1,4 +1,7 @@
 <?php
+/**
+ * Esse arquivo é responsável pelo scripts que serão rodados no banco de dados criado. Data de início: 19/02
+ */
 require_once __DIR__ . '/../core/Database.php';
 
 class Contato {
